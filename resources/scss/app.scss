@@ -1,0 +1,59 @@
+@import '~bootstrap/scss/bootstrap';
+
+header{
+    height: 70px;
+}
+
+.main-wrapper{
+    height: calc(100vh - 70px);
+    .content{
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+    }
+}
+
+aside{
+    flex-shrink: 0;
+    width: 180px;
+    ul{
+        list-style: none;
+        padding-left: 15px;
+        li{
+            line-height: 30px;
+            a{
+            text-decoration: none;
+            color:white;
+            font-size: .9rem
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.crud-table{
+    td:first-child{
+        // width: 300px;
+    }
+    input{
+        border: none;
+        // outline: none !important;
+    }
+
+}
+
+.cover-img{
+    width:150px;
+}
+
+.img-show{
+    width: 500px;
+}
+
+.thumb{
+    width: 200px;
+    margin-top: 10px;
+}
+
