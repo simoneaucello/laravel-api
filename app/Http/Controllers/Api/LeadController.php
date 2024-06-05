@@ -45,7 +45,7 @@ class LeadController extends Controller
         $new_lead->save();
 
         // invio l'email
-        // Mail::to(env('MAIL_FROM_ADDRESS'))->send(new NewContact($new_lead));
+        Mail::to(env('MAIL_FROM_ADDRESS'))->send(new NewContact($new_lead));
 
 
         // restituisco il json con l'avvenuto invio
