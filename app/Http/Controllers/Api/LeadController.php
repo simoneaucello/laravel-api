@@ -51,6 +51,6 @@ class LeadController extends Controller
         // restituisco il json con l'avvenuto invio
 
         $success = true;
-        return response()->json(compact('success', 'errors'));
+        return response()->json(compact('success'));
     }
 }
